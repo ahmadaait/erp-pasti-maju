@@ -81,7 +81,7 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="{{route("home")}}">
               <i class="typcn typcn-chart-pie menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>
@@ -93,7 +93,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="{{route("product.index")}}">
               <i class="mdi mdi-bowl menu-icon"></i>
               <span class="menu-title">Produk</span>
             </a>

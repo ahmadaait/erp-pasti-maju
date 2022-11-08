@@ -19,4 +19,13 @@ Route::get('/', function () {
 
 Auth::routes();
 
+// Dashboard
 Route::get('/home', "HomeController@index")->name('home');
+
+// Produk
+Route::get('/product', 'Core\ProductController@index')->name('product.index');
+Route::get('/product/create', 'Core\ProductController@create')->name('product.create');
+Route::post('/product/store', 'Core\ProductController@store')->name('product.store');
+Route::get('/product/edit/{id}', 'Core\ProductController@edit')->name('product.edit');
+Route::patch('/product/update/{id}', 'Core\ProductController@update')->name('product.update');
+Route::get('/product/delete/{id}', 'Core\ProductController@delete')->name('product.delete');
